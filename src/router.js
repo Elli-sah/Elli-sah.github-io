@@ -21,3 +21,5 @@ export default createRouter({
     },
   ],
 });
+// TODO
+//  path: '/login:id' adressparameter
