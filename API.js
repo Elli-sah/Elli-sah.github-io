@@ -11,15 +11,15 @@ export default {
     }
   },
 
-  async fetchCategories() {
-    try {
-      const categories = await axios.get(
-        'https://fakestoreapi.com/products/categories',
-      );
-      console.log(categories.data);
-      return categories.data;
-    } catch (result) {
-      console.error(result);
-    }
-  },
+  // async fetchCategories() {
+  //   try {
+  //     const categories = await axios.get(
+  //       'https://fakestoreapi.com/products/categories',
+  //     );
+  //     console.log(categories.data);
+  //     return categories.data;
+  //   } catch (result) {
+  //     console.error(result);
+  //   }
+  // },
 };

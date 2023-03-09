@@ -9,7 +9,7 @@ export default createRouter({
   routes: [
     {
       component: ProductsView,
-      path: '/products',
+      path: '/products/:category',
     },
     {
       component: HomeView,
@@ -21,5 +21,3 @@ export default createRouter({
     },
   ],
 });
-// TODO
-//  path: '/login:id' adressparameter

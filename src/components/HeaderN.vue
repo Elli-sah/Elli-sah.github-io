@@ -1,33 +1,17 @@
-<!-- import SearchBar from -->
-<script>
-  import CategoryList from './CategoryList.vue';
-  export default {
-    components: {
-      CategoryList,
-    },
-    methods: {
-      onClick() {},
-    },
-  };
-</script>
 <template>
   <div id="header">
     <h1 id="h1"><RouterLink to="/">Fake Store</RouterLink></h1>
     <nav>
-      <div id="productslink">
-        <RouterLink id="products" to="/products"> All Products</RouterLink>
-      </div>
-      <div>
-        <CategoryList />
-      </div>
+      <RouterLink id="products" to="/products/All_products">
+        <li class="catgory-links">All Products</li>
+      </RouterLink>
+      <RouterLink id="login" to="/login">
+        <img
+          src="../../assets/person_FILL0_wght400_GRAD0_opsz48.svg"
+          alt="login"
+        />
+      </RouterLink>
     </nav>
-    <RouterLink id="login" to="login">
-      <img
-        src="../../assets/person_FILL0_wght400_GRAD0_opsz48.svg"
-        alt="login"
-        @click="onClick"
-      />
-    </RouterLink>
   </div>
 </template>
 <style lang="scss" scoped>
@@ -59,14 +43,23 @@
     height: 40px;
     width: 90%;
     font-weight: bold;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
-  #categorylinks {
-    display: $displayflex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
+  // #categorylinks {
+  //   display: $displayflex;
+  //   flex-direction: row;
+  //   justify-content: space-evenly;
+  // }
   img {
     margin-right: 20px;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
+  li {
+    list-style: none;
+    margin: 30px;
+    margin-top: 50px;
   }
 </style>

@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
   import API from '../../API';
   export default {
     data() {
@@ -25,4 +25,4 @@
     /* margin: 15px; */
     width: 150px;
   }
-</style>
+</style> -->
