@@ -1,7 +1,5 @@
 <template>
-  <div id="imghome">
-    <!-- <img src="" alt="" /> -->
-  </div>
+  <div id="imghome" />
 </template>
 <style scoped>
   #imghome {
@@ -11,9 +9,4 @@
     background-size: cover;
     background-position-y: -70px;
   }
-  /* img {
-    max-width: 100%;
-    margin-top: 5px;
-    max-height: 300px;
-  } */
 </style>
